@@ -28,7 +28,7 @@ module sp_ram_wrap
     input  logic                    bypass_en_i
   );
 
- // **16 addressable banks, each with depth 2048**
+ // **4 addressable banks, each with depth 2048**
   localparam BANK_DEPTH = 2048;
   localparam NUM_BYTES = DATA_WIDTH / 8; // Number of 8-bit RAM instances = 4
   localparam BANK_COUNT = RAM_SIZE / BANK_DEPTH / NUM_BYTES; // 32768 / 2048 / 4 = 4
@@ -41,8 +41,7 @@ module sp_ram_wrap
   logic [7:0] wdata [NUM_BYTES-1:0]; // Byte-wise write data
   logic ready [BANK_COUNT-1:0][NUM_BYTES-1:0]; // Ready signals
 
-  logic [BANK_COUNT-1:0] chip_select; // One-hot select per bank
-  logic [BANK_COUNT-1:0] chip_select_next; // One-hot select per bank
+  logic [1:0] chip_select; // value inside indicates bank number
 
   assign word_addr = addr_i[BANK_ADDR_WIDTH+BYTE_OFFSET-1:BYTE_OFFSET]; // Extract bank word address
 
@@ -51,15 +50,16 @@ module sp_ram_wrap
     if (~rstn_i)
     chip_select <= '1;
     else
-    chip_select <= chip_select_next;
+    chip_select <= addr_i[ADDR_WIDTH-1:BANK_ADDR_WIDTH+BYTE_OFFSET];
   end
+/*
   always_comb begin
     chip_select_next = '1; // Default all banks disabled
     chip_select_next[addr_i[ADDR_WIDTH-1:BANK_ADDR_WIDTH+BYTE_OFFSET]] = en_i; // Enable correct bank
   end
 
 
-/*
+
   always @(posedge clk)
   begin
     //if (en_i && we_i)
@@ -86,9 +86,10 @@ module sp_ram_wrap
       for (bYte = 0; bYte < NUM_BYTES; bYte++) begin : ram_blocks
       ST_SPHDL_2048x8m8_L sp_ram_i (
         .CK        	(clk),
-        .CSN  		(~(en_i & chip_select[bank])),       // Convert active-high en_i to active-low
+        .CSN  		(~((en_i & we_i & be_i[bYte] & (addr_i[ADDR_WIDTH-1:BANK_ADDR_WIDTH+BYTE_OFFSET] == bank))|((addr_i[ADDR_WIDTH-1:BANK_ADDR_WIDTH+BYTE_OFFSET] == bank) & ~we_i & en_i))), //WRITE condition OR READ condition
+	//.CSN		(1'b0),
         .TBYPASS  	(bypass_en_i),        // Assume always 0
-        .WEN 		(~(we_i &&be_i[bYte])), // Convert active-high we_i to active-low
+        .WEN 		(~(we_i & be_i[bYte] & en_i & (addr_i[ADDR_WIDTH-1:BANK_ADDR_WIDTH+BYTE_OFFSET] == bank))), // Convert active-high we_i to active-low
         .A      	(word_addr),   // Shared word address
         .D            	(wdata[bYte]),    // Individual byte from wdata_i
         .RY        	(ready[bank][bYte]),    // Ready signal (not used in sp_ram)
@@ -108,7 +109,7 @@ module sp_ram_wrap
       end
     end
   end
-*/
+
   // Combine read data from all RAM instances into rdata_o with chip select so that not all ST instances drive at the same time 
 always_comb begin
   rdata_o = '0; // Default to zero to avoid latches
@@ -121,7 +122,14 @@ always_comb begin
     //end
   end
 end
-
+*/
+always_comb begin
+  case (chip_select)		//we use chip_select here instead of the macro in ST because we need it for the duration of a period and not as a momentary condition
+	2'd0: rdata_o = {rdata[0][3],rdata[0][2],rdata[0][1],rdata[0][0]};
+	2'd1: rdata_o = {rdata[1][3],rdata[1][2],rdata[1][1],rdata[1][0]};
+	2'd2: rdata_o = {rdata[2][3],rdata[2][2],rdata[2][1],rdata[2][0]};
+	2'd3: rdata_o = {rdata[3][3],rdata[3][2],rdata[3][1],rdata[3][0]};
+  endcase
+end
 endmodule
-
 
