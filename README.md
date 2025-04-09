@@ -12,6 +12,8 @@ To integrate, replace sr_ram_wrap.sv and sp_ram.sv with the ones here. Vcompile_
 
 **Step 5)** Define seperate clk domains (added in synthesis)✔️
 
-**Step 5)** Synthesis
+**Step 5)** Synthesis✔️
 
-Had to change dc_data_buffer.v and add a seperate testbench for the padded top. 
+Had to change dc_data_buffer.v and add a seperate testbench for the padded top. Changing apb_uart.sv also removes an additional generated latch if you don't use all apb_uart.* files in the design.tcl
+
+**Step 6)** PnR
