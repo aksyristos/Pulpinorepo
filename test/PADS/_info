@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/h/d6/z/ge8153ko-s/2ICP25/test
+vCPAD_S_74x50u_IN
+Z1 !s110 1744201600
+!i10b 1
+!s100 HQA5=B3Ve1YGeOJaJho2b3
+I5@GN1^zQzP<UgZRPGId6m1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1517323701
+Z4 8/usr/local-eit/cad2/cmpstm/dicp18/lu_pads_65nm/PADS_Jun2013.v
+Z5 F/usr/local-eit/cad2/cmpstm/dicp18/lu_pads_65nm/PADS_Jun2013.v
+L0 14
+Z6 OL;L;10.6_1;65
+r1
+!s85 0
+31
+Z7 !s108 1744201600.000000
+Z8 !s107 /usr/local-eit/cad2/cmpstm/dicp18/lu_pads_65nm/PADS_Jun2013.v|
+Z9 !s90 -work|PADS|/usr/local-eit/cad2/cmpstm/dicp18/lu_pads_65nm/PADS_Jun2013.v|
+!i113 1
+Z10 o-work PADS -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+n@c@p@a@d_@s_74x50u_@i@n
+vCPAD_S_74x50u_OUT
+R1
+!i10b 1
+!s100 iHR3^cK;<BkJoj?`RFzdV0
+IaK8H5dAT6]6;jdF3aFMmM2
+R2
+R0
+R3
+R4
+R5
+L0 41
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@c@p@a@d_@s_74x50u_@o@u@t
