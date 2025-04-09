@@ -1,6 +1,6 @@
 # ALL values are in picosecond
 
-set PERIOD 5000
+set PERIOD 3000
 set ClkTop $DESIGN
 set ClkDomain $DESIGN
 set ClkName clk
