@@ -74,6 +74,7 @@ vlog -quiet -sv -work ${LIB_PATH} ${RTL_PATH}/components/pulp_clock_mux2.sv     
 vlog -quiet -sv -work ${LIB_PATH} ${RTL_PATH}/components/generic_fifo.sv            || goto error
 vlog -quiet -sv -work ${LIB_PATH} ${RTL_PATH}/components/rstgen.sv                  || goto error
 vlog -quiet -sv -work ${LIB_PATH} ${RTL_PATH}/components/sp_ram.v                  || goto error
+vlog -quiet -sv -work ${LIB_PATH} ${RTL_PATH}/components/PADS_Jun2013.v                  || goto error
 #vlog -quiet -sv -work ${LIB_PATH} ${RTL_PATH}/components/SPHDL100909.v                  || goto error
 
 # files depending on RISCV vs. OR1K
@@ -95,6 +96,7 @@ vlog -quiet -sv -work ${LIB_PATH} +incdir+${RTL_PATH}/includes ${ASIC_DEFINES} $
 vlog -quiet -sv -work ${LIB_PATH} +incdir+${RTL_PATH}/includes ${ASIC_DEFINES} ${CORE_DEFINES} ${RTL_PATH}/clk_rst_gen.sv        || goto error
 vlog -quiet -sv -work ${LIB_PATH} +incdir+${RTL_PATH}/includes ${ASIC_DEFINES} ${CORE_DEFINES} ${RTL_PATH}/axi_slice_wrap.sv     || goto error
 vlog -quiet -sv -work ${LIB_PATH} +incdir+${RTL_PATH}/includes ${ASIC_DEFINES} ${CORE_DEFINES} ${RTL_PATH}/core2axi_wrap.sv      || goto error
+vcom -quiet  ${RTL_PATH}/pulpino_top_wPADS.vhd        || goto error
 
 echo "${Cyan}--> ${IP_NAME} compilation complete! ${NC}"
 exit 0
