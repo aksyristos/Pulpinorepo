@@ -74,7 +74,7 @@ set DESIGN_FILES_SV { \
 	core2axi.sv \
 	apb2per.sv apb_event_unit.sv generic_service_unit.sv sleep_unit.sv \
 	apb_gpio.sv apb_node.sv apb_node_wrap.sv apb_pulpino.sv apb_timer.sv timer.sv \
-	apb_uart.sv apb_uart_sv.sv io_generic_fifo.sv uart_interrupt.sv uart_rx.sv uart_tx.sv \
+	apb_uart.sv io_generic_fifo.sv uart_interrupt.sv uart_rx.sv uart_tx.sv \
 	adbg_axi_biu.sv adbg_axi_module.sv adbg_axionly_top.sv adbg_lint_biu.sv \
 	adbg_lint_module.sv adbg_lintonly_top.sv adbg_or1k_biu.sv \
 	adbg_or1k_module.sv adbg_or1k_status_reg.sv adbg_top.sv adv_dbg_if.sv \
@@ -105,9 +105,9 @@ set DESIGN_FILES_V { \
 }
 
 set DESIGN_FILES_VHDL { \
-	apb_uart.vhd slib_clock_div.vhd slib_counter.vhd slib_edge_detect.vhd \
+	slib_clock_div.vhd slib_counter.vhd slib_edge_detect.vhd \
 	slib_fifo.vhd slib_input_filter.vhd slib_input_sync.vhd \
-	slib_mv_filter.vhd uart_baudgen.vhd uart_interrupt.vhd \
+	slib_mv_filter.vhd uart_baudgen.vhd  \
 	uart_receiver.vhd uart_transmitter.vhd pulpino_top_wPADS.vhd \
 }
 
