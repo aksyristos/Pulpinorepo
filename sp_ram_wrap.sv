@@ -41,12 +41,13 @@ module sp_ram_wrap
   logic [7:0] wdata [NUM_BYTES-1:0]; // Byte-wise write data
   logic ready [BANK_COUNT-1:0][NUM_BYTES-1:0]; // Ready signals
 
-  logic [1:0] chip_select; // value inside indicates bank number
+  logic [1:0] chip_select; // One-hot select per bank
+
 
   assign word_addr = addr_i[BANK_ADDR_WIDTH+BYTE_OFFSET-1:BYTE_OFFSET]; // Extract bank word address
 
   // **Decode which bank to enable**
-  always_ff@(posedge clk or rstn_i) begin
+  always@(posedge clk, negedge rstn_i) begin
     if (~rstn_i)
     chip_select <= '1;
     else
@@ -124,7 +125,7 @@ always_comb begin
 end
 */
 always_comb begin
-  case (chip_select)		//we use chip_select here instead of the macro in ST because we need it for the duration of a period and not as a momentary condition
+  case (chip_select)
 	2'd0: rdata_o = {rdata[0][3],rdata[0][2],rdata[0][1],rdata[0][0]};
 	2'd1: rdata_o = {rdata[1][3],rdata[1][2],rdata[1][1],rdata[1][0]};
 	2'd2: rdata_o = {rdata[2][3],rdata[2][2],rdata[2][1],rdata[2][0]};
@@ -132,4 +133,5 @@ always_comb begin
   endcase
 end
 endmodule
+
 

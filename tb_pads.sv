@@ -78,7 +78,7 @@ module tb;
   jtag_i jtag_if();
 
   adv_dbg_if_t adv_dbg_if = new(jtag_if);
-/*
+
   // use 8N1
   uart_bus
   #(
@@ -91,7 +91,7 @@ module tb;
     .tx         ( uart_tx ),
     .rx_en      ( 1'b1    )
   );
-
+/*
 //  spi_slave
 //  spi_master();
 
@@ -135,7 +135,7 @@ module tb;
     .testmode_ip        ( 1'b0         ),
     .fetch_enable_ip    ( fetch_enable ),
 
-    .spi_clk_ip         ( spi_sck      ),
+    .spi_clk         ( spi_sck      ),
     .spi_cs_ip          ( spi_csn      ),
     .spi_mode_op        ( spi_mode     ),
     .spi_sdo0_op        ( spi_sdi0     ),
@@ -182,7 +182,7 @@ module tb;
     //.gpio_dir          ( gpio_dir     ),
     //.gpio_padcfg       (              ),
 
-    .tck_ip             ( jtag_if.tck     ),
+    .jtag_clk             ( jtag_if.tck     ),
     .trstn_ip           ( jtag_if.trstn   ),
     .tms_ip             ( jtag_if.tms     ),
     .tdi_ip             ( jtag_if.tdi     ),
@@ -213,10 +213,10 @@ module tb;
   begin
     int i;
 
-    if(!$value$plusargs("MEMLOAD=%s", memload))
-      memload = "PRELOAD";
+    //if(!$value$plusargs("MEMLOAD=%s", memload))
+      //memload = "PRELOAD";
 
-    $display("Using MEMLOAD method: %s", memload);
+    //$display("Using MEMLOAD method: %s", memload);
 
     //$display("Using %s core", USE_ZERO_RISCY ? "zero-riscy" : "ri5cy");
 

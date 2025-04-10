@@ -236,7 +236,7 @@ module peripherals
   ///                                                            ///
   //////////////////////////////////////////////////////////////////
 
-  `ifndef VERILATOR
+ /* `ifndef VERILATOR
   apb_uart apb_uart_i (
     .CLK      ( clk_int[1]   ),
     .RSTN     ( rst_n        ),
@@ -263,7 +263,7 @@ module peripherals
     .SIN      ( uart_rx     ),
     .SOUT     ( uart_tx     )
   );
-  `else
+  `else */
   apb_uart_sv
     #(
        .APB_ADDR_WIDTH( 3 )
@@ -286,7 +286,7 @@ module peripherals
       .tx_o     ( uart_tx               ),
       .event_o  ( s_uart_event          )
     );
-  `endif
+  //`endif
 
   //////////////////////////////////////////////////////////////////
   ///                                                            ///

@@ -10,7 +10,7 @@ entity pulpino_top_wPADS is
         fetch_enable_ip  : in  std_logic;
 
         -- SPI Slave
-        spi_clk_ip       : in  std_logic;
+        spi_clk       : in  std_logic;
         spi_cs_ip        : in  std_logic;
         spi_sdi0_ip      : in  std_logic;
         spi_sdi1_ip      : in  std_logic;
@@ -34,7 +34,7 @@ entity pulpino_top_wPADS is
         gpiop            : out std_logic;
 
         -- JTAG
-        tck_ip           : in  std_logic;
+        jtag_clk           : in  std_logic;
         trstn_ip         : in  std_logic;
         tms_ip           : in  std_logic;
         tdi_ip           : in  std_logic;
@@ -150,7 +150,7 @@ begin
     spi_clk_pad_inst: CPAD_S_74x50u_IN
     port map(
         COREIO => spi_clk_pad,
-        PADIO  => spi_clk_ip
+        PADIO  => spi_clk
     );
 
     spi_cs_pad_inst: CPAD_S_74x50u_IN
@@ -266,7 +266,7 @@ begin
     tck_pad_inst: CPAD_S_74x50u_IN
     port map(
         COREIO => tck_pad,
-        PADIO  => tck_ip
+        PADIO  => jtag_clk
     );
 
     trstn_pad_inst: CPAD_S_74x50u_IN
