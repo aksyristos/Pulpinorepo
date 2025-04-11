@@ -20,6 +20,6 @@ Had to change dc_data_buffer.v and add a seperate testbench for the padded top. 
 
 **Step 9)** Performance (matrix multiplication A[4][8]*C[8][4])
 
-Runtime on accelerator :    750 713 ps
+Runtime on accelerator :    750 713 ps<br>
 Runtime on core        : 23 240 000 ps
 
