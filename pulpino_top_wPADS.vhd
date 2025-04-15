@@ -107,8 +107,8 @@ end component;
     signal spi_sdi_pad2 : std_logic;
     signal spi_sdi_pad3 : std_logic;
     signal spi_sdi_pad4 : std_logic;
-    signal spi_mode_pad1 : std_logic;
-    signal spi_mode_pad2 : std_logic;
+    --signal spi_mode_pad1 : std_logic;
+    --signal spi_mode_pad2 : std_logic;
     signal spi_sdo_pad1  : std_logic;
     signal spi_sdo_pad2  : std_logic;
     signal spi_sdo_pad3  : std_logic;
@@ -121,7 +121,8 @@ end component;
 
 begin
     
-    spi_mode_pad <= spi_mode_pad1 & spi_mode_pad2;
+    --spi_mode_pad <= spi_mode_pad2 & spi_mode_pad1;
+    --testmode_pad <= '0';
 
     clk_pad_inst: CPAD_S_74x50u_IN
     port map(
@@ -135,11 +136,11 @@ begin
         PADIO  => rst_np
     );
 
-    testmode_pad_inst: CPAD_S_74x50u_IN
-    port map(
-        COREIO => testmode_pad,
-        PADIO  => testmode_ip
-    );
+--    testmode_pad_inst: CPAD_S_74x50u_IN
+--    port map(
+--        COREIO => testmode_pad,
+--        PADIO  => testmode_ip
+--    );
 
     fetch_pad_inst: CPAD_S_74x50u_IN
     port map(
@@ -210,13 +211,13 @@ begin
 
     spi_mode_pad1_inst: CPAD_S_74x50u_OUT
     port map(
-        COREIO => spi_mode_pad1,
+        COREIO => spi_mode_pad(0),
         PADIO  => spi_mode_op(0)
     );
 
     spi_mode_pad2_inst: CPAD_S_74x50u_OUT
     port map(
-        COREIO => spi_mode_pad2,
+        COREIO => spi_mode_pad(1),
         PADIO  => spi_mode_op(1)
     );
 
@@ -297,7 +298,7 @@ begin
     port map(
         clk            => clk_pad,
         rst_n          => rst_pad,
-        testmode_i    => testmode_pad,
+        testmode_i    => '0',
         fetch_enable_i => fetch_pad,
 
         spi_clk_i      => spi_clk_pad,

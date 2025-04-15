@@ -1,25 +1,25 @@
 # ALL values are in picosecond
 
-set PERIOD 3000
+set PERIOD 5000
 set ClkTop $DESIGN
 set ClkDomain $DESIGN
 set ClkName clk
-set ClkLatency 150
-set ClkRise_uncertainty 60
-set ClkFall_uncertainty 60
-set ClkSlew 15
-set InputDelay 15
-set OutputDelay 15
+set ClkLatency 25
+set ClkRise_uncertainty 500
+set ClkFall_uncertainty 500
+set ClkSlew 500
+set InputDelay 2500
+set OutputDelay 2500
 
 # Remember to change the -port ClkxC* to the actual name of clock port/pin in your design
 
 define_clock -name $ClkName -period $PERIOD -design $ClkTop -domain $ClkDomain [find / -port clk*]
 
-set_attribute clock_network_late_latency $ClkLatency $ClkName
-set_attribute clock_source_late_latency  $ClkLatency $ClkName 
+set_attribute clock_network_late_latency "5 1000" $ClkName
+set_attribute clock_source_late_latency "2.5 500" $ClkName 
 
-set_attribute clock_setup_uncertainty $ClkLatency $ClkName
-set_attribute clock_hold_uncertainty $ClkLatency $ClkName 
+set_attribute clock_setup_uncertainty 500 $ClkName
+set_attribute clock_hold_uncertainty 250 $ClkName 
 
 set_attribute slew_rise $ClkRise_uncertainty $ClkName 
 set_attribute slew_fall $ClkFall_uncertainty $ClkName
@@ -31,20 +31,20 @@ external_delay -output $OutputDelay -clock [find / -clock $ClkName] -name out_co
 set PERIOD_SPI 100000
 set ClkDomainSPI SPI
 set ClkName_SPI spi_clk
-set ClkLatencySPI 5000
-set ClkRise_uncertaintySPI 2000
-set ClkFall_uncertaintySPI 2000
-set ClkSlewSPI 5000
-set InputDelaySPI 5000
-set OutputDelaySPI 5000
+set ClkLatencySPI 500
+set ClkRise_uncertaintySPI 10000
+set ClkFall_uncertaintySPI 10000
+set ClkSlewSPI 10000
+set InputDelaySPI 50000
+set OutputDelaySPI 50000
 
 define_clock -name $ClkName_SPI -period $PERIOD_SPI -design $ClkTop -domain $ClkDomainSPI [find / -port spi_clk*]
 
-set_attribute clock_network_late_latency $ClkLatencySPI $ClkName_SPI
-set_attribute clock_source_late_latency  $ClkLatencySPI $ClkName_SPI 
+set_attribute clock_network_late_latency "100 20000" $ClkName_SPI
+set_attribute clock_source_late_latency "50 10000" $ClkName_SPI 
 
-set_attribute clock_setup_uncertainty $ClkLatencySPI $ClkName_SPI
-set_attribute clock_hold_uncertainty $ClkLatencySPI $ClkName_SPI 
+set_attribute clock_setup_uncertainty 10000 $ClkName_SPI
+set_attribute clock_hold_uncertainty 5000 $ClkName_SPI 
 
 set_attribute slew_rise $ClkRise_uncertaintySPI $ClkName_SPI 
 set_attribute slew_fall $ClkFall_uncertaintySPI $ClkName_SPI
@@ -56,20 +56,20 @@ external_delay -output $OutputDelaySPI -clock [find / -clock $ClkName_SPI] -name
 set PERIOD_JTAG 100000
 set ClkDomainJTAG JTAG
 set ClkName_JTAG jtag_clk
-set ClkLatencyJTAG 5000
-set ClkRise_uncertaintyJTAG 2000
-set ClkFall_uncertaintyJTAG 2000
-set ClkSlewJTAG 5000
-set InputDelayJTAG 5000
-set OutputDelayJTAG 5000
+set ClkLatencyJTAG 500
+set ClkRise_uncertaintyJTAG 10000
+set ClkFall_uncertaintyJTAG 10000
+set ClkSlewJTAG 10000
+set InputDelayJTAG 50000
+set OutputDelayJTAG 50000
 
 define_clock -name $ClkName_JTAG -period $PERIOD_JTAG -design $ClkTop -domain $ClkDomainJTAG [find / -port jtag_clk*]
 
-set_attribute clock_network_late_latency $ClkLatencyJTAG $ClkName_JTAG
-set_attribute clock_source_late_latency  $ClkLatencyJTAG $ClkName_JTAG 
+set_attribute clock_network_late_latency "100 20000" $ClkName_JTAG
+set_attribute clock_source_late_latency "50 10000" $ClkName_JTAG 
 
-set_attribute clock_setup_uncertainty $ClkLatencyJTAG $ClkName_JTAG
-set_attribute clock_hold_uncertainty $ClkLatencyJTAG $ClkName_JTAG
+set_attribute clock_setup_uncertainty 10000 $ClkName_JTAG
+set_attribute clock_hold_uncertainty 5000 $ClkName_JTAG 
 
 set_attribute slew_rise $ClkRise_uncertaintyJTAG $ClkName_JTAG 
 set_attribute slew_fall $ClkFall_uncertaintyJTAG $ClkName_JTAG
