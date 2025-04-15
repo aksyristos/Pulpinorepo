@@ -14,7 +14,16 @@ To integrate, replace sr_ram_wrap.sv and sp_ram.sv with the ones here. Vcompile_
 
 **Step 5)** Synthesis✔️
 
-Had to change dc_data_buffer.v and add a seperate testbench for the padded top. Changing apb_uart.sv also removes an additional generated latch if you don't use all apb_uart.* files in the design.tcl
+Had to change dc_data_buffer.v and add a seperate testbench for the padded top. 
+WARNING: If you want the simulation to print the RX string, DON'T comment out the ifdef VERILATOR in peripherals.sv and use the initial design_setup.tcl. 
+Otherwise you don't use all apb_uart.* files in the design.tcl and thus, change apb_uart.sv to remove an additional generated latch by adding 
+```
+always_comb
+begin
+    fifo_tx_data = 8'b0000_0000; #this line
+    if (PSEL && PENABLE && PWRITE)
+      begin
+```
 
 **Step 6)** PnR
 
