@@ -6,7 +6,7 @@ entity pulpino_top_wPADS is
         -- Clock and Reset
         clkp             : in  std_logic;
         rst_np           : in  std_logic;
-        testmode_ip      : in  std_logic;
+        --testmode_ip      : in  std_logic;
         fetch_enable_ip  : in  std_logic;
 
         -- SPI Slave
