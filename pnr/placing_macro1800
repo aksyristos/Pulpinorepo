@@ -1,0 +1,480 @@
+floorPlan -site CORE -s 1800 1800 50 50 50 50
+uiSetTool select
+getIoFlowFlag
+fit
+panPage 1 0
+panPage 1 0
+uiSetTool move
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i} 3161.941 866.194 3265.141 1036.394
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i} 3294.594 861.429 3397.794 1031.629
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i} 3416.644 857.652 3519.844 1027.852
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i} 3539.769 860.034 3642.969 1030.234
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i} 4139.367 864.799 4242.567 1034.999
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i} 4264.874 864.799 4368.074 1034.999
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i} 4383.234 860.034 4486.434 1030.234
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i} 4501.594 857.651 4604.794 1027.851
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i} 4365.041 490.767 4468.241 660.967
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i} 4483.401 495.532 4586.601 665.732
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i} 4611.29 490.767 4714.49 660.967
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i} 4734.415 488.385 4837.615 658.585
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 4366.772 35.735 4469.972 205.935
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 4494.662 35.736 4597.862 205.936
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 4615.405 30.971 4718.605 201.171
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 4733.764 26.206 4836.964 196.406
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i} 2643.672 416.913 2746.872 587.113
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i} 2762.032 414.531 2865.232 584.731
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 2880.392 414.532 2983.592 584.732
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 2897.066 374.03 3000.266 544.23
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 2889.918 412.148 2993.118 582.348
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i} 3013.045 412.149 3116.245 582.349
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i} 3469.702 285.883 3572.902 456.083
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i} 3590.443 290.648 3693.643 460.848
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i} 3704.039 281.119 3807.239 451.319
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i} 3822.399 278.737 3925.599 448.937
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[0].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[0].sp_ram_i} 3080.725 -2.382 3183.925 167.818
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[1].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[1].sp_ram_i} 3196.703 -9.529 3299.903 160.671
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[2].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[2].sp_ram_i} 3315.062 -9.529 3418.262 160.671
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[3].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[3].sp_ram_i} 3435.805 -2.383 3539.005 167.817
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 2453.512 -9.529 2556.712 160.671
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 2567.107 -7.147 2670.307 163.053
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 2687.85 -9.53 2791.05 160.67
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i}
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 2801.445 -14.294 2904.645 155.906
+uiSetTool select
+gui_select -rect {4112.331 1057.662 4655.510 831.337}
+alignObject -side middle
+spaceObject -fixSide right -space 0
+gui_select -rect {3083.149 1076.721 3693.034 821.808}
+alignObject -side middle
+spaceObject -fixSide right -space 0
+gui_select -rect {2563.793 635.983 3159.385 381.070}
+alignObject -side middle
+spaceObject -fixSide right -space 0
+gui_select -rect {3423.827 507.336 3974.154 250.040}
+alignObject -side middle
+spaceObject -fixSide right -space 0
+gui_select -rect {4324.361 695.542 4869.923 466.835}
+alignObject -side middle
+spaceObject -fixSide right -space 0
+gui_select -rect {2387.498 209.540 2952.119 -64.432}
+alignObject -side middle
+spaceObject -fixSide right -space 0
+gui_select -rect {3066.472 204.775 3564.387 -45.373}
+alignObject -side middle
+spaceObject -fixSide right -space 0
+gui_select -rect {4329.126 230.981 4877.070 -9.638}
+alignObject -side middle
+spaceObject -fixSide right -space 0
+uiSetTool move
+uiSetTool select
+gui_select -rect {3192.738 1069.574 3666.828 812.278}
+uiSetTool move
+panPage -1 0
+panPage -1 0
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i} 129.046 1750.542 232.246 1920.742
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i} 232.246 1750.542 335.446 1920.742
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i} 335.446 1750.542 438.646 1920.742
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i} 438.646 1750.542 541.846 1920.742
+panPage 1 0
+panPage 1 0
+panPage 1 0
+uiSetTool select
+gui_select -rect {4133.772 1062.427 4638.834 828.955}
+uiSetTool move
+panPage -1 0
+panPage -1 0
+panPage 0 1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i} 546.414 1750.266 649.614 1920.466
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i} 649.614 1750.266 752.814 1920.466
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i} 752.814 1750.266 856.014 1920.466
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i} 856.014 1750.266 959.214 1920.466
+fit
+panPage 1 0
+panPage 1 0
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i}
+uiSetTool select
+gui_select -rect {4290.054 731.278 4897.557 443.012}
+uiSetTool move
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i} 1506.656 1747.462 1609.856 1917.662
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i} 1609.856 1747.462 1713.056 1917.662
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i} 1713.056 1747.462 1816.256 1917.662
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i} 1816.256 1747.462 1919.456 1917.662
+flipOrRotateObject -rotate R90 -group
+flipOrRotateObject -rotate R90 -group
+flipOrRotateObject -rotate R90 -group
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i} 1749.657 1816.441 1919.857 1919.641
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i} 1749.657 1713.241 1919.857 1816.441
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i} 1749.657 1610.041 1919.857 1713.241
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i} 1749.657 1506.841 1919.857 1610.041
+uiSetTool select
+panPage 1 0
+gui_select -rect {4394.878 228.599 4880.881 -9.638}
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 1470.032 1284.094 1573.232 1454.294
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 1573.232 1284.094 1676.432 1454.294
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 1676.432 1284.094 1779.632 1454.294
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 1779.632 1284.094 1882.832 1454.294
+flipOrRotateObject -rotate R270 -group
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 1748.766 1400.724 1918.966 1503.924
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 1748.766 1297.524 1918.966 1400.724
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 1748.766 1194.324 1918.966 1297.524
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 1748.766 1091.124 1918.966 1194.324
+uiSetTool select
+uiSetTool move
+uiSetTool select
+gui_select -rect {2662.899 602.630 3194.166 369.158}
+uiSetTool move
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i} 1486.295 209.647 1589.495 379.847
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i} 1589.495 209.647 1692.695 379.847
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 1692.695 209.647 1795.895 379.847
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i} 1795.895 209.647 1899.095 379.847
+uiSetTool select
+panPage 1 0
+gui_select -rect {3399.049 526.394 4004.170 271.481}
+uiSetTool move
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i} 1042.525 208.454 1145.725 378.654
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i} 1145.725 208.454 1248.925 378.654
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i} 1248.925 208.454 1352.125 378.654
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i} 1352.125 208.454 1455.325 378.654
+uiSetTool select
+gui_select -rect {1016.923 414.423 1917.457 178.569}
+flipOrRotateObject -rotate R270 -group
+flipOrRotateObject -rotate R270 -group
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i} 1373.567 129.837 1476.767 300.037
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i} 1270.367 129.837 1373.567 300.037
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 1167.167 129.837 1270.367 300.037
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i} 1063.967 129.837 1167.167 300.037
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i} 1817.337 131.027 1920.537 301.227
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i} 1714.137 131.027 1817.337 301.227
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i} 1610.937 131.027 1714.137 301.227
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i} 1507.737 131.027 1610.937 301.227
+uiSetTool select
+uiSetTool move
+uiSetTool select
+gui_select -rect {3094.345 240.511 3639.907 -45.373}
+uiSetTool move
+panPage -1 0
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[0].sp_ram_i} 139.196 553.901 242.396 724.101
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[1].sp_ram_i} 242.396 553.901 345.596 724.101
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[2].sp_ram_i} 345.596 553.901 448.796 724.101
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[3].sp_ram_i} 448.796 553.901 551.996 724.101
+flipOrRotateObject -rotate R90 -group
+panPage 1 0
+panPage 1 0
+panPage -1 0
+panPage 1 0
+uiSetTool select
+gui_select -rect {2427.283 290.540 2979.992 -45.373}
+flipOrRotateObject -rotate R90 -group
+uiSetTool move
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 135.924 980.344 306.124 1083.544
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 135.924 1083.544 306.124 1186.744
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 135.924 1186.744 306.124 1289.944
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 135.924 1289.944 306.124 1393.144
+uiSetTool select
+gui_select -rect {130.922 1410.252 378.688 528.777}
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[0].sp_ram_i} 127.283 129.839 297.483 233.039
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[1].sp_ram_i} 127.283 233.039 297.483 336.239
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[2].sp_ram_i} 127.283 336.239 297.483 439.439
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[3].sp_ram_i} 127.283 439.439 297.483 542.639
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 124.013 556.284 294.213 659.484
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 124.013 659.484 294.213 762.684
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 124.013 762.684 294.213 865.884
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 124.013 865.884 294.213 969.084
+panPage 0 -1
+panPage 0 -1
+panPage 0 -1
+panPage -1 0
+panPage 1 0
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[0].sp_ram_i} 125.577 125.531 295.777 228.731
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[1].sp_ram_i} 125.577 228.731 295.777 331.931
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[2].sp_ram_i} 125.577 331.931 295.777 435.131
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[3].sp_ram_i} 125.577 435.131 295.777 538.331
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 122.307 551.976 292.507 655.176
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 122.307 655.176 292.507 758.376
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 122.307 758.376 292.507 861.576
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 122.307 861.576 292.507 964.776
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[0].sp_ram_i} 125.506 125.503 295.706 228.703
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[1].sp_ram_i} 125.506 228.703 295.706 331.903
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[2].sp_ram_i} 125.506 331.903 295.706 435.103
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[3].sp_ram_i} 125.506 435.103 295.706 538.303
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 122.236 551.948 292.436 655.148
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 122.236 655.148 292.436 758.348
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 122.236 758.348 292.436 861.548
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 122.236 861.548 292.436 964.748
+panPage 0 -1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[0].sp_ram_i} 125.5 125.5 295.7 228.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[1].sp_ram_i} 125.5 228.7 295.7 331.9
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[2].sp_ram_i} 125.5 331.9 295.7 435.1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[3].sp_ram_i} 125.5 435.1 295.7 538.3
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 122.23 551.945 292.43 655.145
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 122.23 655.145 292.43 758.345
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 122.23 758.345 292.43 861.545
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 122.23 861.545 292.43 964.745
+fit
+uiSetTool select
+gui_select -rect {111.863 998.103 347.717 543.071}
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 127.014 543.174 297.214 646.374
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 127.014 646.374 297.214 749.574
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 127.014 749.574 297.214 852.774
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 127.014 852.774 297.214 955.974
+panPage 0 -1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 125.815 538.743 296.015 641.943
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 125.815 641.943 296.015 745.143
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 125.815 745.143 296.015 848.343
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 125.815 848.343 296.015 951.543
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 125.553 538.353 295.753 641.553
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 125.553 641.553 295.753 744.753
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 125.553 744.753 295.753 847.953
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 125.553 847.953 295.753 951.153
+panPage -1 0
+panPage 0 -1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 125.502 538.303 295.702 641.503
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 125.502 641.503 295.702 744.703
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 125.502 744.703 295.702 847.903
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 125.502 847.903 295.702 951.103
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 125.504 538.305 295.704 641.505
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 125.504 641.505 295.704 744.705
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 125.504 744.705 295.704 847.905
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 125.504 847.905 295.704 951.105
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i} 125.5 538.3 295.7 641.5
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i} 125.5 641.5 295.7 744.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i} 125.5 744.7 295.7 847.9
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i} 125.5 847.9 295.7 951.1
+fit
+uiSetTool select
+gui_select -rect {1493.635 345.335 1939.137 119.010}
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i} 1821.404 125.895 1924.604 296.095
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i} 1718.204 125.895 1821.404 296.095
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i} 1615.004 125.895 1718.204 296.095
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i} 1511.804 125.895 1615.004 296.095
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i} 1822.178 125.632 1925.378 295.832
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i} 1718.978 125.632 1822.178 295.832
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i} 1615.778 125.632 1718.978 295.832
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i} 1512.578 125.632 1615.778 295.832
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i} 1822.292 125.514 1925.492 295.714
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i} 1719.092 125.514 1822.292 295.714
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i} 1615.892 125.514 1719.092 295.714
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i} 1512.692 125.514 1615.892 295.714
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i} 1822.3 125.5 1925.5 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i} 1719.1 125.5 1822.3 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i} 1615.9 125.5 1719.1 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i} 1512.7 125.5 1615.9 295.7
+undo
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i} 1822.3 125.5 1925.5 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i} 1719.1 125.5 1822.3 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i} 1615.9 125.5 1719.1 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i} 1512.7 125.5 1615.9 295.7
+fit
+uiSetTool select
+gui_select -rect {1019.544 345.335 1493.635 119.010}
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i} 1406.922 126.64 1510.122 296.84
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i} 1303.722 126.64 1406.922 296.84
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 1200.522 126.64 1303.722 296.84
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i} 1097.322 126.64 1200.522 296.84
+panPage 1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i} 1409.093 125.729 1512.293 295.929
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i} 1305.893 125.729 1409.093 295.929
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 1202.693 125.729 1305.893 295.929
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i} 1099.493 125.729 1202.693 295.929
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i} 1409.461 125.528 1512.661 295.728
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i} 1306.261 125.528 1409.461 295.728
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 1203.061 125.528 1306.261 295.728
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i} 1099.861 125.528 1203.061 295.728
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i} 1409.491 125.507 1512.691 295.707
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i} 1306.291 125.507 1409.491 295.707
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 1203.091 125.507 1306.291 295.707
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i} 1099.891 125.507 1203.091 295.707
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i} 1409.5 125.5 1512.7 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i} 1306.3 125.5 1409.5 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i} 1203.1 125.5 1306.3 295.7
+setObjFPlanBox Instance {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i} 1099.9 125.5 1203.1 295.7
+fit
+uiSetTool select
+gui_select -rect {1732.822 1926.295 1928.699 1498.601}
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i} 1754.062 1820.602 1924.262 1923.802
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i} 1754.062 1717.402 1924.262 1820.602
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i} 1754.062 1614.202 1924.262 1717.402
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i} 1754.062 1511.002 1924.262 1614.202
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i} 1755.06 1822.072 1925.26 1925.272
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i} 1755.06 1718.872 1925.26 1822.072
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i} 1755.06 1615.672 1925.26 1718.872
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i} 1755.06 1512.472 1925.26 1615.672
+panPage 0 1
+panPage 0 1
+panPage 0 1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i} 1755.286 1822.284 1925.486 1925.484
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i} 1755.286 1719.084 1925.486 1822.284
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i} 1755.286 1615.884 1925.486 1719.084
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i} 1755.286 1512.684 1925.486 1615.884
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i} 1755.3 1822.3 1925.5 1925.5
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i} 1755.3 1719.1 1925.5 1822.3
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i} 1755.3 1615.9 1925.5 1719.1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i} 1755.3 1512.7 1925.5 1615.9
+fit
+uiSetTool select
+gui_select -rect {1740.551 1509.381 1926.864 1082.873}
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 1753.959 1406.568 1924.159 1509.768
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 1753.959 1303.368 1924.159 1406.568
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 1753.959 1200.168 1924.159 1303.368
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 1753.959 1096.968 1924.159 1200.168
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 1755.039 1409.113 1925.239 1512.313
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 1755.039 1305.913 1925.239 1409.113
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 1755.039 1202.713 1925.239 1305.913
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 1755.039 1099.513 1925.239 1202.713
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 1755.267 1409.474 1925.467 1512.674
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 1755.267 1306.274 1925.467 1409.474
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 1755.267 1203.074 1925.467 1306.274
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 1755.267 1099.874 1925.467 1203.074
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 1755.297 1409.496 1925.497 1512.696
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 1755.297 1306.296 1925.497 1409.496
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 1755.297 1203.096 1925.497 1306.296
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 1755.297 1099.896 1925.497 1203.096
+panPage 0 1
+panPage 0 1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 1755.299 1409.499 1925.499 1512.699
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 1755.299 1306.299 1925.499 1409.499
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 1755.299 1203.099 1925.499 1306.299
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 1755.299 1099.899 1925.499 1203.099
+undo
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i} 1755.298 1409.498 1925.498 1512.698
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i} 1755.298 1306.298 1925.498 1409.498
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i} 1755.298 1203.098 1925.498 1306.298
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i} 1755.298 1099.898 1925.498 1203.098
+fit
+panPage 0 1
+uiSetTool select
+gui_select -rect {116.634 1928.032 550.435 1734.808}
+uiSetTool move
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i} 126.546 1754.234 229.746 1924.434
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i} 229.746 1754.234 332.946 1924.434
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i} 332.946 1754.234 436.146 1924.434
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i} 436.146 1754.234 539.346 1924.434
+panPage 0 1
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i} 125.712 1755.057 228.912 1925.257
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i} 228.912 1755.057 332.112 1925.257
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i} 332.112 1755.057 435.312 1925.257
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i} 435.312 1755.057 538.512 1925.257
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i} 125.542 1755.258 228.742 1925.458
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i} 228.742 1755.258 331.942 1925.458
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i} 331.942 1755.258 435.142 1925.458
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i} 435.142 1755.258 538.342 1925.458
+panPage 0 1
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i} 125.506 1755.293 228.706 1925.493
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i} 228.706 1755.293 331.906 1925.493
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i} 331.906 1755.293 435.106 1925.493
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i} 435.106 1755.293 538.306 1925.493
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i} 125.5 1755.3 228.7 1925.5
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i} 228.7 1755.3 331.9 1925.5
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i} 331.9 1755.3 435.1 1925.5
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i} 435.1 1755.3 538.3 1925.5
+fit
+uiSetTool select
+panPage 0 1
+gui_select -rect {539.814 1931.009 994.235 1709.526}
+uiSetTool move
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i} 541.069 1751.028 644.269 1921.228
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i} 644.269 1751.028 747.469 1921.228
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i} 747.469 1751.028 850.669 1921.228
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i} 850.669 1751.028 953.869 1921.228
+panPage -1 0
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i} 540.055 1753.985 643.255 1924.185
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i} 643.255 1753.985 746.455 1924.185
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i} 746.455 1753.985 849.655 1924.185
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i} 849.655 1753.985 952.855 1924.185
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i} 538.465 1755.178 641.665 1925.378
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i} 641.665 1755.178 744.865 1925.378
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i} 744.865 1755.178 848.065 1925.378
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i} 848.065 1755.178 951.265 1925.378
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i} 538.338 1755.27 641.538 1925.47
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i} 641.538 1755.27 744.738 1925.47
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i} 744.738 1755.27 847.938 1925.47
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i} 847.938 1755.27 951.138 1925.47
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i} 538.309 1755.294 641.509 1925.494
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i} 641.509 1755.294 744.709 1925.494
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i} 744.709 1755.294 847.909 1925.494
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i} 847.909 1755.294 951.109 1925.494
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i} 538.302 1755.299 641.502 1925.499
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i} 641.502 1755.299 744.702 1925.499
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i} 744.702 1755.299 847.902 1925.499
+setObjFPlanBox Instance {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i} 847.902 1755.299 951.102 1925.499
+fit
