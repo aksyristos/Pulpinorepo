@@ -30,5 +30,5 @@ begin
 **Step 9)** Performance (matrix multiplication A[4][8]*C[8][4])
 
 Runtime on accelerator :    750 713 ps<br>
-Runtime on core        : 23 240 000 ps
+Runtime on core        : 22 000 000 ps (Tclk=40ns)
 
