@@ -59,6 +59,60 @@ addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_v
 editPushUndo
 addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer AP -type core_rings -jog_distance 2.5 -threshold 2.5 -nets {GND VDD} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right M4 left M4} -width 2 -spacing 2 -offset 2
 
+#Power rings around macros (selected one by one) FOR 1800 FLOORPLAN
+uiSetTool select
+set sprCreateIeRingNets {}
+set sprCreateIeRingLayers {}
+set sprCreateIeRingWidth 1.0
+set sprCreateIeRingSpacing 1.0
+set sprCreateIeRingOffset 1.0
+set sprCreateIeRingThreshold 1.0
+set sprCreateIeRingJogDistance 1.0
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[2].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[3].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[0].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[1].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[2].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[1].ram_blocks[3].sp_ram_i}
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer AP -around cluster -jog_distance 2.5 -threshold 2.5 -type block_rings -nets {GND VDD} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right M4 left M4} -width 2 -spacing 2 -offset 2 -skip_side {left top}
+editPushUndo
+deselectAll
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[0].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[1].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[2].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[2].ram_blocks[3].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[0].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[1].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[2].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[3].ram_blocks[3].sp_ram_i}
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer AP -around cluster -jog_distance 2.5 -threshold 2.5 -type block_rings -nets {GND VDD} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right M4 left M4} -width 2 -spacing 2 -offset 2 -skip_side {top right}
+editPushUndo
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[0].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[1].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[2].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[1].ram_blocks[3].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[0].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[1].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[2].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[0].ram_blocks[3].sp_ram_i}
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer AP -around cluster -jog_distance 2.5 -threshold 2.5 -type block_rings -nets {GND VDD} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right M4 left M4} -width 2 -spacing 2 -offset 2 -skip_side {bottom right}
+editPushUndo
+deselectAll
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[0].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[1].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[2].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[2].ram_blocks[3].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[0].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[1].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[2].sp_ram_i}
+selectInst {pulpino_inst_core_region_i/instr_mem/sp_ram_wrap_i_bank_loop[3].ram_blocks[3].sp_ram_i}
+addRing -skip_via_on_wire_shape Noshape -skip_via_on_pin Standardcell -stacked_via_top_layer AP -around cluster -jog_distance 2.5 -threshold 2.5 -type block_rings -nets {GND VDD} -follow core -stacked_via_bottom_layer M1 -layer {bottom M3 top M3 right M4 left M4} -width 2 -spacing 2 -offset 2 -skip_side {left bottom}
+editPushUndo
+
 #Power rings around macros (selected one by one)
 selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[0].sp_ram_i}
 selectInst {pulpino_inst_core_region_i/data_mem/bank_loop[0].ram_blocks[1].sp_ram_i}
