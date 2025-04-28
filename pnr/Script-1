@@ -133,8 +133,10 @@ addStripe -skip_via_on_wire_shape Noshape -block_ring_top_layer_limit M1 -max_sa
 addWellTap -cell HS65_LS_FILLERSNPWPFP4 -cellInterval 25 -prefix WELLTAP
 
 #Placing standard cells pre-cts optimiztions
-setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8}
+setMultiCpuUsage -local 6
 setPlaceMode -place_global_uniform_density true
+setPlaceMode -place_global_max_density 0.6
+setPlaceMode -prerouteAsObs {1 2 3 4 5 6 7 8}
 setPlaceMode -fp false
 placeDesign
 setDrawView place
@@ -145,8 +147,6 @@ setOptMode -fixCap false -fixTran false -fixFanoutLoad false
 optDesign -preCTS -incr
 setOptMode -fixCap true -fixTran true -fixFanoutLoad true
 optDesign -preCTS
-
-suspend
 
 #Clock tree synt
 set_ccopt_property inverter_cells { HS65_LL_CNIVX10 HS65_LL_CNIVX103 HS65_LL_CNIVX124
@@ -173,6 +173,14 @@ ccopt_design
 #setOptMode -holdFixingCells { HS65_LL_DLYIC2X7 HS65_LL_DLYIC2X9 HS65_LL_DLYIC4X4 HS65_LL_DLYIC4X7 HS65_LL_DLYIC4X9 HS65_LL_DLYIC6X4 HS65_LL_DLYIC6X7 HS65_LL_DLYIC6X9 } 
 setOptMode -holdFixingCells {HS65_LL_BFX106 HS65_LL_BFX13 HS65_LL_BFX142 HS65_LL_BFX18 HS65_LL_BFX2 HS65_LL_BFX213 HS65_LL_BFX22 HS65_LL_BFX27 HS65_LL_BFX284 HS65_LL_BFX31 HS65_LL_BFX35 HS65_LL_BFX4 HS65_LL_BFX40 HS65_LL_BFX44 HS65_LL_BFX49 HS65_LL_BFX53 HS65_LL_BFX62 HS65_LL_BFX7 HS65_LL_BFX71 HS65_LL_BFX9 HS65_LL_BFX106 HS65_LL_BFX13 HS65_LL_BFX142 HS65_LL_BFX18 HS65_LL_BFX2 HS65_LL_BFX213 HS65_LL_BFX22 HS65_LL_BFX27 HS65_LL_BFX284 HS65_LL_BFX31 HS65_LL_BFX35 HS65_LL_BFX4 HS65_LL_BFX40 HS65_LL_BFX44 HS65_LL_BFX49 HS65_LL_BFX53 HS65_LL_BFX62 HS65_LL_BFX7 HS65_LL_BFX71 HS65_LL_BFX9 HS65_LL_BFX106 HS65_LL_BFX13 HS65_LL_BFX142 HS65_LL_BFX18 HS65_LL_BFX2 HS65_LL_BFX213 HS65_LL_BFX22 HS65_LL_BFX27 HS65_LL_BFX284 HS65_LL_BFX31 HS65_LL_BFX35 HS65_LL_BFX4 HS65_LL_BFX40 HS65_LL_BFX44 HS65_LL_BFX49 HS65_LL_BFX53 HS65_LL_BFX62 HS65_LL_BFX7 HS65_LL_BFX71 HS65_LL_BFX9 HS65_LL_BFX106 HS65_LL_BFX13 HS65_LL_BFX142 HS65_LL_BFX18 HS65_LL_BFX2 HS65_LL_BFX213 HS65_LL_BFX22 HS65_LL_BFX27 HS65_LL_BFX284 HS65_LL_BFX31 HS65_LL_BFX35 HS65_LL_BFX4 HS65_LL_BFX40 HS65_LL_BFX44 HS65_LL_BFX49 HS65_LL_BFX53 HS65_LL_BFX62 HS65_LL_BFX7 HS65_LL_BFX71 HS65_LL_BFX9}
 
+suspend
+
+timeDesign -postCTS -hold
+
+suspend
+
+optDesign -postCTS -hold -incr
+
 #Clock tree reports
 report_ccopt_clock_trees -filename ./clktree_ccopt.rpt
 report_ccopt_skew_groups -filename ./skewgrp_ccopt.rpt
@@ -187,3 +195,24 @@ addIoFiller -cell PADSPACE_74x1u -prefix IO_FILLER -side w
 fit
 addIoFiller -cell PADSPACE_74x1u -prefix IO_FILLER -side e
 fit
+
+#Special Route
+sroute -connect { blockPin padPin corePin floatingStripe } -layerChangeRange { M1(1) AP(8) } -blockPinTarget { nearestTarget } -padPinPortConnect { allPort oneGeom } -padPinTarget { nearestTarget } -corePinTarget { firstAfterRowEnd } -floatingStripeTarget { blockring padring ring stripe ringpin blockpin followpin } -allowJogging 1 -crossoverViaLayerRange { M1(1) AP(8) } -nets { GND VDD } -allowLayerChange 1 -blockPin useLef -targetViaLayerRange { M1(1) AP(8) }
+
+#Nano Route
+setDrawView fplan
+setDrawView place
+setNanoRouteMode -quiet -timingEngine {}
+setNanoRouteMode -quiet -routeWithSiPostRouteFix 0
+setNanoRouteMode -quiet -drouteStartIteration default
+setNanoRouteMode -quiet -routeTopRoutingLayer default
+setNanoRouteMode -quiet -routeBottomRoutingLayer default
+setNanoRouteMode -quiet -drouteEndIteration default
+setNanoRouteMode -quiet -routeWithTimingDriven false
+setNanoRouteMode -quiet -routeWithSiDriven false
+routeDesign -globalDetail
+
+
+setAnalysisMode -analysisType onChipVariation
+timeDesign -postRoute
+timeDesign -postRoute -hold
