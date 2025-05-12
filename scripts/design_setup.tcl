@@ -27,7 +27,7 @@ set_attr init_hdl_search_path { \
 	./pulpino/ips/axi/axi_node \
 	./pulpino/ips/axi/axi_slice \
 	./pulpino/ips/axi/axi_slice_dc \
-	./pulpino/ips/axi/axi_spi_master \
+
 	./pulpino/ips/axi/axi_spi_slave \
 	./pulpino/ips/axi/core2axi \
 } /
@@ -66,15 +66,14 @@ set DESIGN_FILES_SV { \
 	axi_RR_Flag_Req.sv axi_ar_buffer.sv axi_aw_buffer.sv axi_b_buffer.sv \
 	axi_buffer.sv axi_r_buffer.sv axi_slice.sv axi_w_buffer.sv \
 	axi_slice_dc_master.sv axi_slice_dc_slave.sv \
-	axi_spi_master.sv spi_master_axi_if.sv spi_master_clkgen.sv \
-	spi_master_controller.sv spi_master_fifo.sv spi_master_rx.sv \
-	spi_master_tx.sv axi_spi_slave.sv spi_slave_axi_plug.sv \
+
+	axi_spi_slave.sv spi_slave_axi_plug.sv \
 	spi_slave_cmd_parser.sv spi_slave_controller.sv spi_slave_dc_fifo.sv \
 	spi_slave_regs.sv spi_slave_rx.sv spi_slave_syncro.sv spi_slave_tx.sv  \
 	core2axi.sv \
 	apb2per.sv apb_event_unit.sv generic_service_unit.sv sleep_unit.sv \
 	apb_gpio.sv apb_node.sv apb_node_wrap.sv apb_pulpino.sv apb_timer.sv timer.sv \
-	apb_uart.sv io_generic_fifo.sv uart_interrupt.sv uart_rx.sv uart_tx.sv \
+	apb_uart.sv apb_uart_sv.sv io_generic_fifo.sv uart_interrupt.sv uart_rx.sv uart_tx.sv \
 	adbg_axi_biu.sv adbg_axi_module.sv adbg_axionly_top.sv adbg_lint_biu.sv \
 	adbg_lint_module.sv adbg_lintonly_top.sv adbg_or1k_biu.sv \
 	adbg_or1k_module.sv adbg_or1k_status_reg.sv adbg_top.sv adv_dbg_if.sv \
@@ -96,18 +95,23 @@ set DESIGN_FILES_SV { \
 	axi_spi_slave_wrap.sv boot_code.sv boot_rom_wrap.sv core2axi_wrap.sv \
 	periph_bus_wrap.sv ram_mux.sv sp_ram_wrap.sv instr_ram_wrap.sv \
 	core_region.sv peripherals.sv pulpino_top.sv \
+	apb_mock_uart.sv apu_macros.sv clk_rst_gen.sv defines_event_unit.sv \
+	dp_ram.sv dp_ram_wrap.sv \
+	riscv_config.sv \
 }
 
 set DESIGN_FILES_V { \
+	defines.v adbg_lint_defines.v adbg_or1k_defines.v \
+	adbg_tap_defines.v adbg_axi_defines.v adbg_defines.v 
 	dc_full_detector.v dc_synchronizer.v dc_data_buffer.v \
 	dc_token_ring_fifo_din.v dc_token_ring_fifo_dout.v dc_token_ring.v \
 	adbg_tap_top.v adbg_crc32.v bytefifo.v syncflop.v syncreg.v \
 }
 
 set DESIGN_FILES_VHDL { \
-	slib_clock_div.vhd slib_counter.vhd slib_edge_detect.vhd \
+	apb_uart.vhd slib_clock_div.vhd slib_counter.vhd slib_edge_detect.vhd \
 	slib_fifo.vhd slib_input_filter.vhd slib_input_sync.vhd \
-	slib_mv_filter.vhd uart_baudgen.vhd  \
+	slib_mv_filter.vhd uart_baudgen.vhd uart_interrupt.vhd \
 	uart_receiver.vhd uart_transmitter.vhd pulpino_top_wPADS.vhd \
 }
 
