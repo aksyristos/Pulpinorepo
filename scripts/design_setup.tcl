@@ -27,7 +27,7 @@ set_attr init_hdl_search_path { \
 	./pulpino/ips/axi/axi_node \
 	./pulpino/ips/axi/axi_slice \
 	./pulpino/ips/axi/axi_slice_dc \
-
+	./pulpino/ips/axi/axi_spi_master \
 	./pulpino/ips/axi/axi_spi_slave \
 	./pulpino/ips/axi/core2axi \
 } /
@@ -51,7 +51,6 @@ set_attr hdl_error_on_blackbox true /
 # put all your design files here
 
 set DESIGN_FILES_SV { \
-	apu_defines.sv axi_bus.sv debug_bus.sv config.sv apb_bus.sv  \
 	axi2apb32.sv AXI_2_APB_32.sv axi2apb.sv AXI_2_APB.sv \
 	axi_mem_if_DP_hybr.sv axi_mem_if_DP.sv \
 	axi_mem_if_MP_Hybrid_multi_bank.sv axi_mem_if_multi_bank.sv \
@@ -66,8 +65,9 @@ set DESIGN_FILES_SV { \
 	axi_RR_Flag_Req.sv axi_ar_buffer.sv axi_aw_buffer.sv axi_b_buffer.sv \
 	axi_buffer.sv axi_r_buffer.sv axi_slice.sv axi_w_buffer.sv \
 	axi_slice_dc_master.sv axi_slice_dc_slave.sv \
-
-	axi_spi_slave.sv spi_slave_axi_plug.sv \
+	axi_spi_master.sv spi_master_axi_if.sv spi_master_clkgen.sv \
+	spi_master_controller.sv spi_master_fifo.sv spi_master_rx.sv \
+	spi_master_tx.sv axi_spi_slave.sv spi_slave_axi_plug.sv \
 	spi_slave_cmd_parser.sv spi_slave_controller.sv spi_slave_dc_fifo.sv \
 	spi_slave_regs.sv spi_slave_rx.sv spi_slave_syncro.sv spi_slave_tx.sv  \
 	core2axi.sv \
@@ -90,19 +90,14 @@ set DESIGN_FILES_SV { \
 	riscv_controller.sv riscv_core.sv axi2apb_wrap.sv \
 	cluster_clock_gating.sv cluster_clock_inverter.sv cluster_clock_mux2.sv \
 	generic_fifo.sv pulp_clock_gating.sv pulp_clock_inverter.sv \
-	pulp_clock_mux2.sv rstgen.sv  \
+	pulp_clock_mux2.sv rstgen.sv sp_ram.sv \
 	axi_mem_if_SP_wrap.sv axi_node_intf_wrap.sv axi_slice_wrap.sv \
 	axi_spi_slave_wrap.sv boot_code.sv boot_rom_wrap.sv core2axi_wrap.sv \
 	periph_bus_wrap.sv ram_mux.sv sp_ram_wrap.sv instr_ram_wrap.sv \
 	core_region.sv peripherals.sv pulpino_top.sv \
-	apb_mock_uart.sv apu_macros.sv clk_rst_gen.sv defines_event_unit.sv \
-	dp_ram.sv dp_ram_wrap.sv \
-	riscv_config.sv \
 }
 
 set DESIGN_FILES_V { \
-	defines.v adbg_lint_defines.v adbg_or1k_defines.v \
-	adbg_tap_defines.v adbg_axi_defines.v adbg_defines.v 
 	dc_full_detector.v dc_synchronizer.v dc_data_buffer.v \
 	dc_token_ring_fifo_din.v dc_token_ring_fifo_dout.v dc_token_ring.v \
 	adbg_tap_top.v adbg_crc32.v bytefifo.v syncflop.v syncreg.v \
