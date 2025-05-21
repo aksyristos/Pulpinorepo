@@ -90,7 +90,7 @@ set DESIGN_FILES_SV { \
 	riscv_controller.sv riscv_core.sv axi2apb_wrap.sv \
 	cluster_clock_gating.sv cluster_clock_inverter.sv cluster_clock_mux2.sv \
 	generic_fifo.sv pulp_clock_gating.sv pulp_clock_inverter.sv \
-	pulp_clock_mux2.sv rstgen.sv sp_ram.sv \
+	pulp_clock_mux2.sv rstgen.sv \
 	axi_mem_if_SP_wrap.sv axi_node_intf_wrap.sv axi_slice_wrap.sv \
 	axi_spi_slave_wrap.sv boot_code.sv boot_rom_wrap.sv core2axi_wrap.sv \
 	periph_bus_wrap.sv ram_mux.sv sp_ram_wrap.sv instr_ram_wrap.sv \
