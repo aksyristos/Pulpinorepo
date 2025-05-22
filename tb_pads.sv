@@ -132,7 +132,7 @@ module tb;
     .rst_np             ( s_rst_n      ),
 
     //.clk_sel_i         ( 1'b0         ),
-    .testmode_ip        ( 1'b0         ),
+    //.testmode_ip        ( 1'b0         ),
     .fetch_enable_ip    ( fetch_enable ),
 
     .spi_clk         ( spi_sck      ),
