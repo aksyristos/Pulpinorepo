@@ -53,7 +53,7 @@ module control_unit(
                       end
                       else if(shift)begin
                          next_counter = curr_counter + 1;
-                         if(curr_address == 5'b11100)begin
+                         if(curr_counter == 5'b11100)begin
                          next_counter = 5'b00001;
                          end
                       end 
