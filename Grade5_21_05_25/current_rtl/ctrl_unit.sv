@@ -41,7 +41,7 @@ module control_unit(
            RESET:begin
                  WRITEn = 1'b0;
                  next_address = curr_address + 1;
-                    if (curr_address == 392)begin
+               if (curr_address == 338)begin
                         next_state = CALC;
                         next_address = 11'b0;
                     end
